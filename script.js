@@ -26,5 +26,34 @@ getGridSizeButton.addEventListener("click", function(event){
 })
 
 container.addEventListener('mouseover', function(event) {
-    event.target.style.background = "black";
+    switch (Math.floor(Math.random()*10)) {
+        case 1:
+            gridColor = "lime"
+            break;
+        case 2:
+            gridColor = "blue"
+            break;
+        case 3:
+            gridColor = "aqua"
+            break;
+        case 4:
+            gridColor = "yellow"
+            break;
+        case 5:
+            gridColor = "magenta"
+            break;
+        case 6:
+            gridColor = "springgreen"
+            break;
+        case 7:
+            gridColor = "red"
+            break;
+        case 8:
+            gridColor = "tomato"
+            break;
+        case 9:
+            gridColor = "purple"
+            break;
+    }
+    event.target.style.background = gridColor;
 });
