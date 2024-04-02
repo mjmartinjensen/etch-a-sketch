@@ -26,6 +26,14 @@ getGridSizeButton.addEventListener("click", function(event){
 })
 
 container.addEventListener('mouseover', function(event) {
+    if (Number(event.target.style.opacity) < 1) {
+        event.target.style.opacity = Number(event.target.style.opacity) + 0.1
+    }
+    event.target.style.background = `rgb(0,0,0)`;
+});
+
+/* Paint with random colors
+container.addEventListener('mouseover', function(event) {
     switch (Math.floor(Math.random()*10)) {
         case 1:
             gridColor = "lime"
@@ -57,3 +65,4 @@ container.addEventListener('mouseover', function(event) {
     }
     event.target.style.background = gridColor;
 });
+*/
